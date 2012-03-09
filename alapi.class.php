@@ -31,7 +31,7 @@ class alPartner
 		$path = '';
 		
 		$post_variables = array(
-			'keyword' => $keyword,
+			'keyword' => trim($keyword),
 			'auth_token' => $auth_token,
 			'engine' => $engine,
 			'locale' => $locale,
