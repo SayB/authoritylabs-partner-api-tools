@@ -1,1 +1,3 @@
 PHP tools to help integrate the AuthorityLabs Partner API. 
+
+Keywords passed into the Partner API must be encoded as UTF-8 prior to being posted via this class.

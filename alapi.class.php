@@ -16,7 +16,7 @@ class alPartner
 	/**
 	* POST a keyword to the queue
 	*
-	* @param string $keyword   		Keyword to query against
+	* @param string $keyword   		Keyword to query against - this keyword must be passed in encoded as UTF-8
 	* @param string $auth_token		AuthorityLabs Partner API Key
 	* @param string $priority		OPTIONAL Defines whether or not to use priority queue. Passing "true" to this will use priority queue
 	* @param string $engine			OPTIONAL Search engine to query - see supported engines list at http://authoritylabs.com/api/reference/#engines
@@ -53,7 +53,7 @@ class alPartner
 	/** 
 	* GET SERP data for a keyword - returns json or html data of SERP, depending on the specified format
 	*
-	* @param string $keyword 		Keyword to get data for
+	* @param string $keyword 		Keyword to get data for - this keyword must be passed in encoded as UTF-8
 	* @param string $auth_token		AuthorityLabs Partner API Key
 	* @param string $rank_date		Date to retrieve the SERP for. Must be in YYYY-MM-DD format
 	* @param string $data_format	OPTIONAL Define format type to retrieve. Default is json - see supported types at http://authoritylabs.com/api/reference/#formats
